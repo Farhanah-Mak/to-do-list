@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#22c1c3, #c3a622);
+    display: flex;
+    justify-content: center;
+}
+.title{
+    margin-top: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 3px 6px rgba(0,0,0,0.3);
+}
+.form{
+    position: absolute;
+    top: 30%;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: .8;
+}
+.fa-plus{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 3rem;
+    transform: translate(-50%, -50);
+    color: lightseagreen;
+    cursor: pointer;
+}
+.fa-plus:hover{
+        opacity: .7;
+}
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+.input::placeholder{
+    color: lightgray;
+}
+.list{
+    padding: 0;
+    margin: 0;
+}
+.list li{
+    list-style-type: none;
+    padding: 20px;
+    border-top: 1px dotted lightgray;
+    position: relative;
+    font-size: 1.5em;
+    font-family: monospace;
+    text-transform: capitalize;
+    
+}
+.list li .fa-square-check{
+    color: lightseagreen;
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    font-size: .8em;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+ .list li .fa-square-check:hover{
+        opacity: 0.8;
+}  
+.list li .fa-trash{
+        color: lightseagreen;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: .75em;
+    
+}
+ .list li .fa-trash:hover{
+    opacity: .7;
+}  
+/* styling for the checked list */
+.list li.checked{
+    color: darkgrey;
+    text-decoration: line-through;
+    
+}
+.list li.checked .fa-square-check{
+    color: darkgrey;
+}
